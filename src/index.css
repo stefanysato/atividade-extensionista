@@ -1,0 +1,16 @@
+/* reset */
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+/* cores */
+:root {
+    --moss-green: #4C6A3B;
+    --lime-green: #B3D97E;
+    --gray: #9E9E9E;
+    --terracotta: #E07A5F
+}
+
+/* fontes */
