@@ -1,8 +1,9 @@
 
+
 export default function Home() {
     return (
-        <>
-            <h1>Home</h1>
-        </>
+        <div className="page-content">
+            <h1>Passo Verde</h1>
+        </div>
     )
 }

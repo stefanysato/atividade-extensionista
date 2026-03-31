@@ -1,13 +1,17 @@
 import species from '../data/species'
 import Card from '../components/Card'
+import SearchBox from '../components/SearchBox'
 
 export default function SpeciesList() {
     return (
-        <div>
+        <div className="page-content">
             <h1>Espécies</h1>
-            {species.map(specie => (
-                <Card key={specie.id} data={specie} />
-            ))}
+            <SearchBox />
+            <div className='species-cards'>
+                {species.map((species, id) => (
+                    <Card key={id} data={species} />
+                ))}
+            </div>
         </div>
     )
 }

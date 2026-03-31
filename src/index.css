@@ -14,3 +14,30 @@
 }
 
 /* fontes */
+
+html,
+body,
+#root {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    padding-bottom: 80px;
+}
+
+.species-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
