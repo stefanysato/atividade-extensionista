@@ -9,7 +9,6 @@
 
 .img-container {
     grid-column: 1;
-    width: 100px;
 }
 
 .img-container img {
@@ -23,7 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: .7rem;
-    padding: 1rem 0;
+    padding: .8rem;
 }
 
 .tags-container {
@@ -38,4 +37,16 @@
     padding: .3rem;
     font-size: .8rem;
     width: fit-content;
+    text-transform: lowercase;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 150px;
+    }
 }

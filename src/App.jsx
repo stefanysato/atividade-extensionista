@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
+import { useEffect, useRef } from "react"
+
 import './index.css'
 
 import Home from "./pages/Home"
@@ -10,28 +12,39 @@ import SpeciesDetail from "./pages/SpeciesDetail"
 import UserProfile from "./pages/UserProfile"
 import NavBar from "./components/NavBar"
 
-function App() {
+function AppLayout() {
+  const contentRef = useRef(null)
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    contentRef.current?.scrollTo(0, 0)
+  }, [pathname])
+
   return (
-    <BrowserRouter>
-      <div className="app-container">
-        <div className="app-content">
+    <div className="app-container">
+      <div className="app-content" ref={contentRef}>
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<About />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/quiz/result" element={<QuizResult />} />
-            <Route path="/especies" element={<SpeciesList />} />
-            <Route path="/especies/:id" element={<SpeciesDetail />} />
-            <Route path="/perfil" element={<UserProfile />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<About />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/result" element={<QuizResult />} />
+          <Route path="/especies" element={<SpeciesList />} />
+          <Route path="/especies/:id" element={<SpeciesDetail />} />
+          <Route path="/perfil" element={<UserProfile />} />
+        </Routes>
 
-        </div>
-
-        <NavBar />
       </div>
-    </BrowserRouter>
+
+      <NavBar />
+    </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppLayout />
+    </BrowserRouter>
+  )
+}
