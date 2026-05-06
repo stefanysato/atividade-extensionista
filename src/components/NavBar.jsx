@@ -1,23 +1,28 @@
 import { NavLink } from 'react-router-dom'
 import './NavBar.css'
 
+import home from '../assets/img/icons/home.png'
+import info from '../assets/img/icons/info.png'
+import search from '../assets/img/icons/search.png'
+import user from '../assets/img/icons/user.png'
+
 export default function NavBar() {
     return (
         <nav className='navbar'>
             <NavLink to="/" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
-                <span className='icon'>🏠</span>
+                <img src={home} className='icon' alt="" />
                 <p>Home</p>
             </NavLink>
             <NavLink to="/sobre" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
-                <span className='icon'>ℹ️</span>
+                <img src={info} className='icon' alt="" />
                 <p>Sobre</p>
             </NavLink>
             <NavLink to="/especies" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
-                <span className='icon'>🔍</span>
+                <img src={search} className='icon' alt="" />
                 <p>Explorar</p>
             </NavLink>
             <NavLink to="/perfil" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
-                <span className='icon'>👤</span>
+                <img src={user} className='icon' alt="" />
                 <p>Perfil</p>
             </NavLink>
         </nav>

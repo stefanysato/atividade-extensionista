@@ -9,7 +9,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 9999;
 
     background-color: white;
@@ -18,15 +18,20 @@
 
 .navlink {
     text-decoration: none;
-    opacity: 0.3;
+    opacity: 0.4;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--moss-green);
+    gap: 5px;
+}
+
+.navlink>.icon {
+    width: 20px;
 }
 
 .navlink>p {
-    font-size: .8rem;
+    font-size: .7rem;
     text-transform: lowercase;
 }
 
@@ -40,20 +45,28 @@
         width: 200px;
         height: 100vh;
         flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 2rem;
-        align-items: end;
+        justify-content: start;
+        padding: 2rem 1rem;
+        align-items: start;
     }
 
     .navlink {
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .navlink>p {
-        font-size: 2rem;
+        display: block;
+        font-size: 1.2rem;
+        text-transform: none;
     }
 
     .navlink>.icon {
         display: none;
+    }
+
+    .active {
+        background-color: #dddddd;
+        color: black;
+        border-radius: 5px;
     }
 }

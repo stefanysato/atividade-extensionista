@@ -11,8 +11,10 @@ export default function Card({ data }) {
                 <img src={data.image} alt={data.name} />
             </div>
             <div className="species-info">
-                <h2>{data.name}</h2>
-                <p>{data.scientificName}</p>
+                <div className="name-container">
+                    <h2>{data.name}</h2>
+                    <p>{data.scientificName}</p>
+                </div>
                 <div className="tags-container">
                     {data.tags.map(tag => {
                         const t = getTag(tag)

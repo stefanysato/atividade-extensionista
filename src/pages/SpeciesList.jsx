@@ -3,17 +3,57 @@ import Card from '../components/Card'
 import SearchBox from '../components/SearchBox'
 
 import './SpeciesList.css'
+import { useState } from 'react'
+import FilterPanel from '../components/FilterPanel'
 
 export default function SpeciesList() {
-    // species.sort((a, b) => a.name.localeCompare(b.name))
-    console.log(species.name);
+    // Coloca em ordem alfabética
+    species.sort((a, b) => a.name.localeCompare(b.name))
+
+    const [filters, setFilters] = useState({
+        query: '',
+        size: [],
+        type: []
+    });
+    console.log(filters);
+
+
+    function toggleFilter(category, value) {
+        console.log('clicou:', category, value);
+
+        setFilters(prev => {
+            const selected = prev[category].includes(value);
+
+            return {
+                ...prev,
+                [category]: selected ? prev[category].filter(v => v !== value) : [...prev[category], value]
+            }
+        })
+    }
+
+    // resultado final
+    const filteredSpecies = species.filter(s => {
+        return (
+            (filters.size.length === 0 || filters.size.includes(s.height)) &&
+            (filters.type.length === 0 || s.tags.some(t => filters.type.includes(t)))
+        )
+    })
 
     return (
         <div className="page-content">
             <h1>Espécies</h1>
-            {/* <SearchBox /> */}
+            <SearchBox
+                value={filters.query}
+                onChange={(value) =>
+                    setFilters(prev => ({ ...prev, query: value }))
+                }
+            />
+            <FilterPanel
+                filters={filters}
+                toggleFilter={toggleFilter}
+            />
             <div className='species-cards'>
-                {species.map((item) => (
+                {filteredSpecies.map((item) => (
                     <Card key={item.id} data={item} />
                 ))}
             </div>

@@ -22,6 +22,7 @@ function AppLayout() {
 
   return (
     <div className="app-container">
+      <NavBar />
       <div className="app-content" ref={contentRef}>
 
         <Routes>
@@ -35,8 +36,6 @@ function AppLayout() {
         </Routes>
 
       </div>
-
-      <NavBar />
     </div>
   )
 }

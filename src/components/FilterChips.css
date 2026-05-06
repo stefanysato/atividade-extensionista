@@ -1,0 +1,26 @@
+.filter-group {
+    text-align: center;
+}
+
+.chips-container {
+    margin-bottom: 1rem;
+}
+
+.filter-label {
+    font-size: 1.2rem;
+}
+
+.chip {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.chip.active {
+    background: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}

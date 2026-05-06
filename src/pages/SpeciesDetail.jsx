@@ -23,9 +23,9 @@ export default function SpeciesDetail() {
             <img src={species.image} alt={species.name} />
             <h1>{species.name}</h1>
             <h2>{species.scientificName}</h2>
-            <p>{species.description}</p>
-            <h3>Informações</h3>
+            <p className="description">{species.description}</p>
             <div className="info-container">
+                <h3>Informações</h3>
                 <p><b>Altura:</b> {getLabel(LABELS.height, species.height)}</p>
                 <p><b>Raíz:</b> {getLabel(LABELS.root, species.root)}</p>
                 <p><b>Copa:</b> {getLabel(LABELS.canopy, species.canopy)}</p>

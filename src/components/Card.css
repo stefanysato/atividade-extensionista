@@ -9,6 +9,9 @@
 
 .img-container {
     grid-column: 1;
+    padding: 1rem;
+    width: 150px;
+    height: 200px;
 }
 
 .img-container img {
@@ -16,16 +19,27 @@
     height: 100%;
     object-fit: cover;
     font-size: 12px;
+    border-radius: 5px;
 }
 
 .species-info {
     display: flex;
     flex-direction: column;
-    gap: .7rem;
-    padding: .8rem;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+.name-container>h2 {
+    font-size: 1rem;
+}
+
+.name-container>p {
+    font-style: italic;
+    font-size: .8rem;
 }
 
 .tags-container {
+    padding: 1rem 0;
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
@@ -34,19 +48,27 @@
 .tag {
     border: 1px solid var(--gray);
     border-radius: 5px;
-    padding: .3rem;
-    font-size: .8rem;
+    padding: .2rem;
+    font-size: .6rem;
     width: fit-content;
     text-transform: lowercase;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
     .card {
         grid-template-columns: 1fr;
     }
 
     .img-container {
         width: 100%;
-        height: 150px;
+        height: 250px;
+    }
+
+    .tag {
+        font-size: .7rem;
+    }
+
+    .species-info {
+        padding: 0 1rem;
     }
 }
