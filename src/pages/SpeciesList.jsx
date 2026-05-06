@@ -5,6 +5,7 @@ import SearchBox from '../components/SearchBox'
 import './SpeciesList.css'
 import { useState } from 'react'
 import FilterPanel from '../components/FilterPanel'
+import { normalizeText } from '../utils/helpers'
 
 export default function SpeciesList() {
     // Coloca em ordem alfabética
@@ -35,7 +36,8 @@ export default function SpeciesList() {
     const filteredSpecies = species.filter(s => {
         return (
             (filters.size.length === 0 || filters.size.includes(s.height)) &&
-            (filters.type.length === 0 || s.tags.some(t => filters.type.includes(t)))
+            (filters.type.length === 0 || s.tags.some(t => filters.type.includes(t))) &&
+            (filters.query === '' || normalizeText(s.name).includes(normalizeText(filters.query)))
         )
     })
 
