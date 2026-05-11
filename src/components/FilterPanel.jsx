@@ -2,9 +2,9 @@ import FilterChips from './FilterChips'
 import './FilterPanel.css'
 import { sizeOptions, typeOptions } from '../data/filterOptions'
 
-export default function FilterPanel({ filters, toggleFilter }) {
+export default function FilterPanel({ filters, toggleFilter, isOpen }) {
     return (
-        <div>
+        <div className={`filter-container ${isOpen ? "open" : ""}`}>
             <FilterChips
                 label="Tamanho"
                 category="size"
@@ -20,14 +20,5 @@ export default function FilterPanel({ filters, toggleFilter }) {
                 toggleFilter={toggleFilter}
             />
         </div>
-
-        // <div>
-        //     <select id="type-select" value={filters.type} onChange={(e) => setFilters(prev => ({ ...prev, type: e.target.value }))}>
-        //         <option value="">Todos os tipos</option>
-        //         <option value="ornamental">Ornamental</option>
-        //         <option value="fruit">Frutífera</option>
-        //         <option value="shade">Sombra</option>
-        //     </select>
-        // </div>
     )
 }

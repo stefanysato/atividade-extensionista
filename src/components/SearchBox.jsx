@@ -1,7 +1,9 @@
-export default function SearchBox({value, onChange}) {
+import './SearchBox.css'
+
+export default function SearchBox({ value, onChange }) {
     return (
         <div>
-            <input 
+            <input
                 type="text"
                 placeholder="Buscar espécie..."
                 value={value}

@@ -1,0 +1,9 @@
+.filter-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+.filter-container.open {
+    max-height: 400px;
+}

@@ -27,6 +27,7 @@
     flex-direction: column;
     padding: 1rem 0;
     justify-content: space-between;
+    text-align: left;
 }
 
 .name-container>h2 {

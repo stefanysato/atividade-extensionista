@@ -6,6 +6,7 @@ import './SpeciesList.css'
 import { useState } from 'react'
 import FilterPanel from '../components/FilterPanel'
 import { normalizeText } from '../utils/helpers'
+import settingsIcon from '../assets/img/icons/settings-sliders.png'
 
 export default function SpeciesList() {
     // Coloca em ordem alfabética
@@ -13,15 +14,13 @@ export default function SpeciesList() {
 
     const [filters, setFilters] = useState({
         query: '',
-        size: [],
+        size: '',
         type: []
     });
-    console.log(filters);
 
+    const [showFilters, setShowFilters] = useState(false);
 
     function toggleFilter(category, value) {
-        console.log('clicou:', category, value);
-
         setFilters(prev => {
             const selected = prev[category].includes(value);
 
@@ -44,15 +43,21 @@ export default function SpeciesList() {
     return (
         <div className="page-content">
             <h1>Espécies</h1>
-            <SearchBox
-                value={filters.query}
-                onChange={(value) =>
-                    setFilters(prev => ({ ...prev, query: value }))
-                }
-            />
+            <div className='search-container'>
+                <SearchBox
+                    value={filters.query}
+                    onChange={(value) =>
+                        setFilters(prev => ({ ...prev, query: value }))
+                    }
+                />
+                <button className='filters-btn' onClick={() => setShowFilters(!showFilters)}>
+                    <img src={settingsIcon} />
+                </button>
+            </div>
             <FilterPanel
                 filters={filters}
                 toggleFilter={toggleFilter}
+                isOpen={showFilters}
             />
             <div className='species-cards'>
                 {filteredSpecies.map((item) => (

@@ -41,6 +41,8 @@ body,
     flex-direction: column;
     gap: 1rem;
     animation: fadeIn 0.3s ease;
+    justify-content: center;
+    text-align: center;
 }
 
 @keyframes fadeIn {
