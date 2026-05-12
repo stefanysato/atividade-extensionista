@@ -29,7 +29,7 @@ function AppLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/quiz/result" element={<QuizResult />} />
+          <Route path="/recomendacoes" element={<QuizResult />} />
           <Route path="/especies" element={<SpeciesList />} />
           <Route path="/especies/:id" element={<SpeciesDetail />} />
           <Route path="/perfil" element={<UserProfile />} />
