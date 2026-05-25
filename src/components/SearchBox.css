@@ -1,7 +1,6 @@
 input {
-    width: 300px;
-    border-radius: 10px;
+    width: 280px;
     padding: 10px;
-    border: 1px solid var(--gray);
+    border: none;
     outline: none;
 }

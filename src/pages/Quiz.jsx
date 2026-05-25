@@ -47,8 +47,7 @@ export default function Quiz() {
                     <button
                         className="option-btn"
                         key={option.value}
-                        onClick={() => handleAnswer(question.id, option.value)
-                        }
+                        onClick={() => handleAnswer(question.id, option.value)}
                     >
                         {option.label}
                     </button>

@@ -61,7 +61,10 @@ export default function SpeciesList() {
             />
             <div className='species-cards'>
                 {filteredSpecies.map((item) => (
-                    <Card key={item.id} data={item} />
+                    <Card
+                        key={item.id}
+                        data={item}
+                    />
                 ))}
             </div>
         </div>

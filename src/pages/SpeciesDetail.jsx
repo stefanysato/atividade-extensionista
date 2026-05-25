@@ -2,6 +2,10 @@ import { useNavigate, useParams } from "react-router-dom"
 import speciesList from "../data/species"
 import { getLabel } from "../utils/helpers"
 import { LABELS } from "../data/labels"
+import { useFavorites } from '../context/FavoritesContext'
+
+import heart from '../assets/img/icons/heart.png'
+import heartFilled from '../assets/img/icons/heart-filled.png'
 
 import './SpeciesDetail.css'
 
@@ -11,16 +15,21 @@ export default function SpeciesDetail() {
 
     const species = speciesList.find(s => s.id === id)
 
+    const { toggleFavorite, isFavorite } = useFavorites()
+
     if (!species) {
         return <p>Espécie não encontrada</p>
     }
 
     return (
         <div className="page-content species-detail">
-            <button onClick={() => navigate(-1)}>
-                ⬅️
+            <button className="btn back" onClick={() => navigate(-1)}>
+                «
             </button>
-            <img src={species.image} alt={species.name} />
+            <button className="btn fav" onClick={() => toggleFavorite(species.id)}>
+                {isFavorite(species.id) ? <img src={heartFilled} /> : <img src={heart} />}
+            </button>
+            <img className="species-img" src={species.image} alt={species.name} />
             <h1>{species.name}</h1>
             <h2>{species.scientificName}</h2>
             <p className="description">{species.description}</p>

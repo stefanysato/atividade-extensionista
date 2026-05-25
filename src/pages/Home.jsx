@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
+import './Home.css'
 
 export default function Home() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function Home() {
     }
 
     return (
-        <div className="page-content">
+        <div className="page-content home">
             <h1>Passo Verde</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tempore veritatis qui debitis pariatur excepturi provident cum obcaecati? Veniam, earum?</p>
             <Link to="/sobre">
@@ -22,10 +23,14 @@ export default function Home() {
             </Link>
             <div>
                 <h2>Vamos começar? :)</h2>
-                <button onClick={handleQuizNavigation}>Descubra sua árvore</button>
+                <button
+                    onClick={handleQuizNavigation}
+                    className="home-btn"
+                >
+                    Descubra sua árvore</button>
                 <p>ou</p>
                 <Link to="/especies">
-                    <button>Explore todas as espécies</button>
+                    <button className="home-btn">Explore todas as espécies</button>
                 </Link>
             </div>
         </div>
