@@ -5,7 +5,29 @@
     align-items: center;
 }
 
+.option-btn {
+    border: 2px solid var(--vibrant-fern);
+    padding: 1rem;
+    width: 200px;
+    border-radius: 2rem;
+    background: #fff9f9;
+}
+
+.option-btn:hover {
+    cursor: pointer;
+    background-color: var(--vibrant-fern);
+    color: #fff9f9;
+}
+
 .retake-quiz-btn {
-    width: fit-content;
+    border: 2px solid var(--vibrant-fern);
     align-self: center;
+    border-radius: 2rem;
+    background: #fff9f9;
+    padding: 1rem;
+}
+
+.retake-quiz-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

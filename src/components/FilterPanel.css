@@ -7,3 +7,10 @@
 .filter-container.open {
     max-height: 400px;
 }
+
+@media (min-width: 1024px) {
+    .filter-container {
+        width: 400px;
+        margin: auto;
+    }
+}

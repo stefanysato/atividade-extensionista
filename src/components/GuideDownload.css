@@ -1,0 +1,22 @@
+.guide-link {
+    text-decoration: none;
+    color: var(--vibrant-fern);
+}
+
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+select {
+    margin-bottom: 10px;
+    background-color: var(--offwhite);
+    border: 2px solid var(--vibrant-fern);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+::picker(select) {
+    border-radius: 8px;
+    background-color: var(--offwhite);
+}

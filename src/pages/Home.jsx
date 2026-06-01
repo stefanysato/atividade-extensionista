@@ -23,9 +23,9 @@ export default function Home() {
                 <span>Passo Verde</span>
             </div>
             <div className="app-desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tempore veritatis qui debitis pariatur excepturi provident cum obcaecati? Veniam, earum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, aut.</p>
                 <Link to="/sobre">
-                    Leia mais...
+                    Leia mais
                 </Link>
             </div>
             <div className="app-main-nav">

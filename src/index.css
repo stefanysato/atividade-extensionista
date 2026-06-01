@@ -7,16 +7,12 @@
 
 /* cores */
 :root {
-    --terracotta: #E07A5F;
-    --dark-earth: #2A2421;
     --vibrant-fern: #4A7C59;
     --lime-leaf: #A1C181;
     --offwhite: #f7f5ea;
     --charcoal: #2C3E50;
     --gray: #a0a0a0;
 }
-
-/* fontes */
 
 html,
 body,
@@ -50,7 +46,7 @@ body,
 }
 
 h1 {
-    text-align: left;
+    font-family: "Architects Daughter", cursive;
 }
 
 @keyframes fadeIn {
@@ -67,10 +63,16 @@ h1 {
 
 @media (min-width: 1024px) {
     .app-container {
-        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .app-content {
+        height: 100vh;
+        padding-bottom: 3rem;
     }
 
     .page-content {
-        margin: 2rem;
+        width: 80%;
+        margin: 1rem auto;
     }
 }

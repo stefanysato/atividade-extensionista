@@ -31,16 +31,23 @@
 .total-species {
     font-size: .8rem;
     text-align: right;
-    margin-right: 1rem;
 }
 
 @media (min-width: 500px) {
     .species-cards {
         grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
         justify-content: center;
+        position: relative;
+        margin-top: 2rem;
     }
 
     .search-container {
         width: fit-content;
+    }
+
+    .total-species {
+        position: absolute;
+        right: 125px;
+        top: -40px;
     }
 }

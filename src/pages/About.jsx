@@ -1,6 +1,10 @@
 import './About.css'
 import { useRef, useState } from 'react'
 
+import sobre1 from '../assets/img/sobre1.png'
+import sobre2 from '../assets/img/sobre2.png'
+import sobre3 from '../assets/img/sobre3.png'
+
 export default function About() {
     const carouselRef = useRef(null)
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -30,7 +34,7 @@ export default function About() {
     }
 
     return (
-        <main className="about">
+        <main className="page-content about">
             <button className='arrow left' onClick={prevSlide}>
                 «
             </button>
@@ -40,22 +44,63 @@ export default function About() {
                 ref={carouselRef}
                 onScroll={handleScroll}
             >
+                <section className='slide'>
+                    <h1>Sobre o projeto</h1>
+                    <p>O “Passo Verde” nasceu da percepção da falta de árvores nas ruas e de como isso afeta diretamente a qualidade de vida da população, especialmente devido às temperaturas cada vez mais altas, e tem como objetivo promover cidades mais sustentáveis através do incentivo ao plantio de árvores nas calçadas.</p>
+                    <p className='warning'>⚠️ Essa prática deve ser realizada em conjunto com a prefeitura do seu município, que poderá ser responsável pela análise da espécie mais adequada para a sua região! Para mais informações, consulte o guia.🌿</p>
+                </section>
                 <section className="slide">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde dolorem quidem est nostrum, tempore recusandae suscipit totam aperiam doloremque.</p>
+                    <h2>Benefícios</h2>
+                    <img src={sobre1} className='slide-photo1' />
+                    <h3>Sociais e Saúde</h3>
+                    <p>Mais qualidade de vida</p>
                 </section>
 
                 <section className='slide'>
-                    <p>Lorem ipsum dolor sit amet.</p>
+
+                    <h4>Redução de ruído</h4>
+                    <p>Barreiras naturais contra o barulho urbano</p>
+                    <h4>Melhora da saúde mental e física das pessoas</h4>
+                    <p>O contato com a natureza promove a queda da ansiedade e do estresse e incentiva a prática de atividades físicas</p>
+                    <h4>Redução da violência</h4>
+                    <p>Estudos mostram menor criminalidade em áreas mais arborizadas</p>
+
                 </section>
 
                 <section className='slide'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, a.</p>
+                    <h3>Ambientais</h3>
+                    <h4>Regulação térmica</h4>
+                    <p>Redução da temperatura e do efeito de ilha de calor por meio de sombra e absorção dos raios solares</p>
+                    <p>Microclimas mais amenos</p>
+                    <h4>Melhoria da qualidade do ar</h4>
+                    <p>Absorvem dióxido de carbono e liberam oxigênio</p>
+                    <h4>Gestão da água</h4>
+                    <p>Retém água da chuva, diminui o escoamento superficial e a erosão, atuando na prevenção de enchentes</p>
+                </section>
+
+                <section className='slide'>
+                    <img src={sobre2} className='slide-photo2' />
+                    <h3>Econômicos</h3>
+                    <h4>Valorização imobiliária</h4>
+                    <p>Áreas verdes bem cuidadas aumentam o valor das propriedades</p>
+                    <h4>Economia de energia com climatização</h4>
+                    <p>Diminui a necessidade de ar-condicionado</p>
+                </section>
+
+                <section className='slide'>
+                    <h3>Vida selvagem</h3>
+                    <h4>Enriquecem a fauna urbana</h4>
+                    <p>Servem de abrigo e alimento para pássaros e outros animais</p>
+                    <img src={sobre3} className='slide-photo3' />
                 </section>
             </div>
             <div className='dots'>
                 <span className={currentSlide === 0 ? 'active' : ''}></span>
                 <span className={currentSlide === 1 ? 'active' : ''}></span>
                 <span className={currentSlide === 2 ? 'active' : ''}></span>
+                <span className={currentSlide === 3 ? 'active' : ''}></span>
+                <span className={currentSlide === 4 ? 'active' : ''}></span>
+                <span className={currentSlide === 5 ? 'active' : ''}></span>
             </div>
 
             <button className='arrow right' onClick={nextSlide}>

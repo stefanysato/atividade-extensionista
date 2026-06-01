@@ -51,7 +51,7 @@ export default function SpeciesDetail() {
                 <div>
                     <h3>Dicas de cultivo</h3>
                     <p>{species.care}</p>
-                    <p><a className="link-tips" href={`http://www.google.com/search?q="${species.name}%20dicas%20de%20cultivo"`}>Mais dicas? 🔍</a></p>
+                    <p><a className="link-tips" href={`http://www.google.com/search?q=${species.name}%20dicas%20de%20cultivo`}>Mais dicas? 🔍</a></p>
                 </div>
             </section>
         </div >
