@@ -16,7 +16,7 @@ export default function Card({ data }) {
                 <img src={data.image} alt={data.name} />
             </div>
             <div className="species-info">
-                <div className="name-container">
+                <div className="name-container-card">
                     <h2>{data.name}</h2>
                     <p>{data.scientificName}</p>
                     <button className="fav-btn-card" onClick={(event) => {

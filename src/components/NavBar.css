@@ -1,19 +1,19 @@
 .navbar {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 10px;
+    width: 80%;
     top: auto;
-
+    border-radius: 30px;
     height: 60px;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     z-index: 9999;
+    justify-self: center;
 
-    background-color: white;
-    box-shadow: 3px 0px 10px 1px var(--gray);
+    background-color: var(--offwhite);
+    box-shadow: 3px 0px 10px 1px #888;
 }
 
 .navlink {
@@ -43,11 +43,13 @@
     .navbar {
         position: relative;
         width: 200px;
-        height: 100vh;
+        height: 80vh;
         flex-direction: column;
         justify-content: start;
         padding: 2rem 1rem;
         align-items: start;
+        align-self: center;
+        left: 1rem;
     }
 
     .navlink {
@@ -65,8 +67,9 @@
     }
 
     .active {
-        background-color: #dddddd;
-        color: black;
+        background-color: var(--lime-leaf);
+        color: var(--offwhite);
         border-radius: 5px;
+        color: var(--charcoal);
     }
 }

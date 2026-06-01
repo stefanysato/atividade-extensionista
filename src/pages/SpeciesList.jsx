@@ -59,6 +59,7 @@ export default function SpeciesList() {
                 toggleFilter={toggleFilter}
                 isOpen={showFilters}
             />
+            <span className='total-species'><strong>Total:</strong> {species.length} espécies</span>
             <div className='species-cards'>
                 {filteredSpecies.map((item) => (
                     <Card

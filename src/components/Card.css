@@ -1,15 +1,15 @@
 .card {
-    /* border-bottom: 1px solid black; */
     border-radius: 20px;
     cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 2px 2px 10px var(--gray);
     padding: 5px;
+    background-color: #fff9f9;
 }
 
 .card:hover {
-    box-shadow: 2px 2px 20px var(--moss-green);
+    box-shadow: 2px 2px 20px var(--vibrant-fern);
 }
 
 .img-container {
@@ -35,15 +35,15 @@
     text-align: left;
 }
 
-.name-container {
+.name-container-card {
     position: relative;
 }
 
-.name-container>h2 {
+.name-container-card>h2 {
     font-size: 0.9rem;
 }
 
-.name-container>p {
+.name-container-card>p {
     font-style: italic;
     font-size: .7rem;
 }
@@ -68,7 +68,7 @@
 }
 
 .tag {
-    border: 1px solid var(--gray);
+    border: 1px solid #9c9c9c;
     border-radius: 5px;
     padding: .2rem;
     font-size: .6rem;
