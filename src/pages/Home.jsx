@@ -2,9 +2,13 @@ import { Link, useNavigate } from "react-router-dom"
 import './Home.css'
 
 import logo from '../assets/img/logo.png'
+import install from '../assets/img/icons/install.png'
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 export default function Home() {
     const navigate = useNavigate();
+    const [openModal, setOpenModal] = useState(false)
 
     function handleQuizNavigation() {
         const storedResults = localStorage.getItem('quizResults');
@@ -18,6 +22,11 @@ export default function Home() {
 
     return (
         <div className="page-content home">
+            <button className="install-btn" onClick={() => setOpenModal(true)}>
+                <img src={install} />
+                <p>Instalar</p>
+            </button>
+            <Modal isOpen={openModal} closeModal={() => setOpenModal(!openModal)} />
             <div className="logo-container">
                 <img src={logo} alt="PV Logo" className="logo" />
             </div>

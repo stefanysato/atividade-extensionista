@@ -1,0 +1,31 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80dvh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.back-home-btn {
+    background: var(--lime-leaf);
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.nf-heading {
+    font-size: 5rem;
+}
+
+.nf-img {
+    width: 200px;
+}
+
+.not-found>p {
+    font-size: 14px;
+}

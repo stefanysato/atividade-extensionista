@@ -101,7 +101,7 @@ export default function About() {
                     <h3>Informações técnicas</h3>
                     <h4>Versão</h4>
                     <p>1.0</p>
-                    <h4>Desenvolvedores</h4>
+                    <h4>Desenvolvedora</h4>
                     <p>Stefany Sato</p>
                     <h4>Instituição</h4>
                     <p>UNINTER - Centro Universitário Internacional</p>

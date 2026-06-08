@@ -10,6 +10,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
 
       manifest: {
+        id: "/",
         name: "Passo Verde",
         short_name: "Passo Verde",
         description: "Guia de arborização urbana",

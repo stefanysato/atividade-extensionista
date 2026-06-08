@@ -1,3 +1,7 @@
+.home {
+    position: relative;
+}
+
 .home-btn {
     padding: 1rem;
     width: 120px;
@@ -6,6 +10,21 @@
     border: 2px solid var(--lime-leaf);
     background-color: #fff9f9;
     font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.install-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+}
+
+.install-btn>img {
+    background: var(--lime-leaf);
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
 }
 

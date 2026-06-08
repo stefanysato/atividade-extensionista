@@ -11,6 +11,7 @@ import SpeciesList from "./pages/SpeciesList"
 import SpeciesDetail from "./pages/SpeciesDetail"
 import UserProfile from "./pages/UserProfile"
 import NavBar from "./components/NavBar"
+import NotFound from "./components/NotFound"
 
 function AppLayout() {
   const contentRef = useRef(null)
@@ -33,6 +34,7 @@ function AppLayout() {
           <Route path="/especies" element={<SpeciesList />} />
           <Route path="/especies/:id" element={<SpeciesDetail />} />
           <Route path="/perfil" element={<UserProfile />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
       </div>

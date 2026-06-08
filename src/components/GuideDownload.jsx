@@ -16,8 +16,8 @@ export default function GuideDownload() {
                 onChange={(e) => setCity(e.target.value)}
             >
                 <option value="">-- Selecione uma cidade --</option>
-                <option value="praia_grande">Praia Grande</option>
-                <option value="sao_paulo">São Paulo</option>
+                <option value="praia_grande">Praia Grande/SP</option>
+                <option value="sao_paulo">São Paulo/SP</option>
             </select>
             <p>
                 {city && (
