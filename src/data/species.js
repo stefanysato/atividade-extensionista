@@ -5,7 +5,7 @@ const species = [
     name: "Guaçatonga",
     scientificName: "Casearia sylvestris",
 
-    image: "../src/assets/img/species/guacatonga.jpg",
+    image: "/species/guacatonga.jpg",
     gallery: [],
 
     height: "medium",
@@ -27,7 +27,7 @@ const species = [
     name: "Algodão-da-praia",
     scientificName: "Hibiscus tiliaceus",
 
-    image: "../src/assets/img/species/algodao.jpg",
+    image: "/species/algodao.jpg",
     gallery: [],
 
     height: "small",
@@ -49,7 +49,7 @@ const species = [
     name: "Chupa-ferro",
     scientificName: "Metrodorea nigra",
 
-    image: "../src/assets/img/species/chupa_ferro.jpg",
+    image: "/species/chupa_ferro.jpg",
     gallery: [],
 
     height: "small",
@@ -71,7 +71,7 @@ const species = [
     name: "Manacá-da-serra",
     scientificName: "Tibouchina mutabilis",
 
-    image: "../src/assets/img/species/manaca.jpg",
+    image: "/species/manaca.jpg",
     gallery: [],
 
     height: "medium",
@@ -93,7 +93,7 @@ const species = [
     name: "Araçá-do-mato",
     scientificName: "Psidium cattleianum",
 
-    image: "../src/assets/img/species/araca.jpg",
+    image: "/species/araca.jpg",
     gallery: [],
 
     height: "small",
@@ -115,7 +115,7 @@ const species = [
     name: "Ipê-amarelo-cascudo",
     scientificName: "Tabebuia chrysotricha",
 
-    image: "../src/assets/img/species/ipe.jpg",
+    image: "/species/ipe.jpg",
     gallery: [],
 
     height: "medium",
@@ -137,7 +137,7 @@ const species = [
     name: "Cambuci",
     scientificName: "Campomanesia phaea",
 
-    image: "../src/assets/img/species/cambuci.jpg",
+    image: "/species/cambuci.jpg",
     gallery: [],
 
     height: "small",
@@ -159,7 +159,7 @@ const species = [
     name: "Goiabeira",
     scientificName: "Psidium guajava",
 
-    image: "../src/assets/img/species/goiabeira.jpg",
+    image: "/species/goiabeira.jpg",
     gallery: [],
 
     height: "small",
@@ -182,7 +182,7 @@ const species = [
     name: "Quaresmeira",
     scientificName: "Tibouchina granulosa",
 
-    image: "../src/assets/img/species/quaresmeira.jpg",
+    image: "/species/quaresmeira.jpg",
     gallery: [],
 
     height: "medium",
@@ -204,7 +204,7 @@ const species = [
     name: "Aroeira-pimenteira",
     scientificName: "Schinus terebinthifolius",
 
-    image: "../src/assets/img/species/aroeira.jpg",
+    image: "/species/aroeira.jpg",
     gallery: [],
 
     height: "medium",
@@ -226,7 +226,7 @@ const species = [
     name: "Embaúba",
     scientificName: "Cecropia pachystachya",
 
-    image: "../src/assets/img/species/embauba.jpg",
+    image: "/species/embauba.jpg",
     gallery: [],
 
     height: "large",
@@ -248,7 +248,7 @@ const species = [
     name: "Caroba",
     scientificName: "Jacaranda micrantha",
 
-    image: "../src/assets/img/species/caroba.jpg",
+    image: "/species/caroba.jpg",
     gallery: [],
 
     height: "medium",
@@ -270,7 +270,7 @@ const species = [
     name: "Pata-de-vaca",
     scientificName: "Bauhinia forficata",
 
-    image: "../src/assets/img/species/pata_de_vaca.jpg",
+    image: "/species/pata_de_vaca.jpg",
     gallery: [],
 
     height: "small",
@@ -292,7 +292,7 @@ const species = [
     name: "Canafístula",
     scientificName: "Senna multijuga",
 
-    image: "../src/assets/img/species/canafistula.jpg",
+    image: "/species/canafistula.jpg",
     gallery: [],
 
     height: "medium",
@@ -316,7 +316,7 @@ const species = [
     name: "Embiruçu",
     scientificName: "Pseudobombax grandiflorum",
 
-    image: "../src/assets/img/species/embirucu.jpg",
+    image: "/species/embirucu.jpg",
     gallery: [],
 
     height: "large",
@@ -338,7 +338,7 @@ const species = [
     name: "Sibipiruna",
     scientificName: "Caesalpinia peltophoroides",
 
-    image: "../src/assets/img/species/sibipiruna.jpg",
+    image: "/species/sibipiruna.jpg",
     gallery: [],
 
     height: "large",
@@ -360,7 +360,7 @@ const species = [
     name: "Angelim-doce",
     scientificName: "Andira fraxinifolia",
 
-    image: "../src/assets/img/species/angelim.jpg",
+    image: "/species/angelim.jpg",
     gallery: [],
 
     height: "medium",
@@ -382,7 +382,7 @@ const species = [
     name: "Pitangueira",
     scientificName: "Eugenia uniflora",
 
-    image: "../src/assets/img/species/pitangueira.jpg",
+    image: "/species/pitangueira.jpg",
     gallery: [],
 
     height: "small",
@@ -403,7 +403,7 @@ const species = [
     name: "Ipê-amarelo-do-brejo",
     scientificName: "Tabebuia umbellata",
 
-    image: "../src/assets/img/species/ipe_brejo.jpg",
+    image: "/species/ipe_brejo.jpg",
     gallery: [],
 
     height: "large",
@@ -425,7 +425,7 @@ const species = [
     name: "Camboatá",
     scientificName: "Cupania vernalis",
 
-    image: "../src/assets/img/species/camboata.jpg",
+    image: "/species/camboata.jpg",
     gallery: [],
 
     height: "large",
@@ -447,7 +447,7 @@ const species = [
     name: "Ingá",
     scientificName: "Inga spp.",
 
-    image: "../src/assets/img/species/inga.jpg",
+    image: "/species/inga.jpg",
     gallery: [],
 
     height: "large",
@@ -469,7 +469,7 @@ const species = [
     name: "Grumixama",
     scientificName: "Eugenia brasiliensis",
 
-    image: "../src/assets/img/species/grumixama.jpg",
+    image: "/species/grumixama.jpg",
     gallery: [],
 
     height: "medium",
@@ -491,7 +491,7 @@ const species = [
     name: "Guanandi",
     scientificName: "Calophyllum brasiliense",
 
-    image: "../src/assets/img/species/guanandi.jpg",
+    image: "/species/guanandi.jpg",
     gallery: [],
 
     height: "large",
@@ -512,7 +512,7 @@ const species = [
     name: "Calabura",
     scientificName: "Muntingia calabura",
 
-    image: "../src/assets/img/species/calabura.jpg",
+    image: "/species/calabura.jpg",
     gallery: [],
 
     height: "medium",
@@ -532,7 +532,7 @@ const species = [
     name: "Candelabro",
     scientificName: "Erythrina speciosa",
 
-    image: "../src/assets/img/species/candelabro.webp",
+    image: "/species/candelabro.webp",
     gallery: [],
 
     height: "small",
@@ -552,7 +552,7 @@ const species = [
     name: "Cerejeira-do-Japão",
     scientificName: "Prunus serrulata",
 
-    image: "../src/assets/img/species/cerejeira.jpg",
+    image: "/species/cerejeira.jpg",
     gallery: [],
 
     height: "small",
@@ -572,7 +572,7 @@ const species = [
     name: "Resedá",
     scientificName: "Lagerstroemia indica",
 
-    image: "../src/assets/img/species/reseda.jpg",
+    image: "/species/reseda.jpg",
     gallery: [],
 
     height: "small",
@@ -593,7 +593,7 @@ const species = [
     name: "Guatambuzinho",
     scientificName: "Aspidosperma riedelii",
 
-    image: "../src/assets/img/species/guatambu.jpg",
+    image: "/species/guatambu.jpg",
     gallery: [],
 
     height: "small",
@@ -613,7 +613,7 @@ const species = [
     name: "Flamboyant mirim",
     scientificName: "Caesalpinia pulcherrima",
 
-    image: "../src/assets/img/species/flamboyant.jpg",
+    image: "/species/flamboyant.jpg",
     gallery: [],
 
     height: "small",
@@ -633,7 +633,7 @@ const species = [
     name: "Oiti",
     scientificName: "Licania tomentosa",
 
-    image: "../src/assets/img/species/oiti.jpg",
+    image: "/species/oiti.jpg",
     gallery: [],
 
     height: "medium",
@@ -653,7 +653,7 @@ const species = [
     name: "Escova-de-garrafa",
     scientificName: "Callistemon spp",
 
-    image: "../src/assets/img/species/escova_de_garrafa.jpg",
+    image: "/species/escova_de_garrafa.jpg",
     gallery: [],
 
     height: "small",
