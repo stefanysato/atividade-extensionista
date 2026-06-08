@@ -10,7 +10,7 @@
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
 }
 
 .logo-container {
@@ -21,6 +21,10 @@
 
 .logo-container>span {
     font-size: 2rem;
+}
+
+.leia-mais-link {
+    color: var(--vibrant-fern);
 }
 
 .buttons-container {
@@ -44,5 +48,9 @@
 
     .home-btn {
         width: 200px;
+    }
+
+    .logo {
+        width: 300px;
     }
 }

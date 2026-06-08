@@ -73,9 +73,19 @@
     text-decoration: underline;
 }
 
+
+@media (min-width: 600px) {
+
+    .species-img,
+    .info-container {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
 @media (min-width: 1024px) {
     .species-detail {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
         width: 90%;
         margin: auto;

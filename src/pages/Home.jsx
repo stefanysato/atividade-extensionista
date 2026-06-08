@@ -20,11 +20,11 @@ export default function Home() {
         <div className="page-content home">
             <div className="logo-container">
                 <img src={logo} alt="PV Logo" className="logo" />
-                <span>Passo Verde</span>
             </div>
             <div className="app-desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, aut.</p>
-                <Link to="/sobre">
+                <p>O "Passo Verde" é um aplicativo voltado para a educação ambiental e arborização urbana.</p>
+                <p>Queremos transformar cidades com mais verde e mais consciência. 🌱</p>
+                <Link to="/sobre" className="leia-mais-link">
                     Leia mais
                 </Link>
             </div>

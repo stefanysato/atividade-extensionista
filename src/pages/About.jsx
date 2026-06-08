@@ -46,8 +46,8 @@ export default function About() {
             >
                 <section className='slide'>
                     <h1>Sobre o projeto</h1>
-                    <p>O “Passo Verde” nasceu da percepção da falta de árvores nas ruas e de como isso afeta diretamente a qualidade de vida da população, especialmente devido às temperaturas cada vez mais altas, e tem como objetivo promover cidades mais sustentáveis através do incentivo ao plantio de árvores nas calçadas.</p>
-                    <p className='warning'>⚠️ Essa prática deve ser realizada em conjunto com a prefeitura do seu município, que poderá ser responsável pela análise da espécie mais adequada para a sua região! Para mais informações, consulte o guia.🌿</p>
+                    <p>O "Passo Verde" nasceu da percepção da falta de árvores nas ruas e de como isso afeta diretamente a qualidade de vida da população, especialmente devido às temperaturas cada vez mais altas, e tem como objetivo promover cidades mais sustentáveis através do incentivo ao plantio de árvores nas calçadas.</p>
+                    <p>Nossa missão é gerar interesse e levar um pouco de informação sobre as diversas espécies que podemos encontrar por aí!</p>
                 </section>
                 <section className="slide">
                     <h2>Benefícios</h2>
@@ -57,14 +57,12 @@ export default function About() {
                 </section>
 
                 <section className='slide'>
-
                     <h4>Redução de ruído</h4>
                     <p>Barreiras naturais contra o barulho urbano</p>
                     <h4>Melhora da saúde mental e física das pessoas</h4>
                     <p>O contato com a natureza promove a queda da ansiedade e do estresse e incentiva a prática de atividades físicas</p>
                     <h4>Redução da violência</h4>
                     <p>Estudos mostram menor criminalidade em áreas mais arborizadas</p>
-
                 </section>
 
                 <section className='slide'>
@@ -92,7 +90,26 @@ export default function About() {
                     <h4>Enriquecem a fauna urbana</h4>
                     <p>Servem de abrigo e alimento para pássaros e outros animais</p>
                     <img src={sobre3} className='slide-photo3' />
+                    <p>Vamos plantar?!</p>
+                    <p className='warning'>⚠️ Essa prática deve ser realizada em conjunto com a prefeitura do seu município, que ficará responsável pela análise da espécie mais adequada para a sua região! Para mais informações, consulte o guia de arborização da sua cidade. 🌿</p>
                 </section>
+
+                <section className='slide'>
+                    <h2>Créditos</h2>
+                    <p className='mrg1'>Site desenvolvido para fins educacionais, como parte da Atividade Extensionista de graduação.</p>
+
+                    <h3>Informações técnicas</h3>
+                    <h4>Versão</h4>
+                    <p>1.0</p>
+                    <h4>Desenvolvedores</h4>
+                    <p>Stefany Sato</p>
+                    <h4>Instituição</h4>
+                    <p>UNINTER - Centro Universitário Internacional</p>
+                    <p className='mrg1'>© 2026 Passo Verde</p>
+
+
+                </section>
+
             </div>
             <div className='dots'>
                 <span className={currentSlide === 0 ? 'active' : ''}></span>
@@ -101,12 +118,12 @@ export default function About() {
                 <span className={currentSlide === 3 ? 'active' : ''}></span>
                 <span className={currentSlide === 4 ? 'active' : ''}></span>
                 <span className={currentSlide === 5 ? 'active' : ''}></span>
+                <span className={currentSlide === 6 ? 'active' : ''}></span>
             </div>
 
             <button className='arrow right' onClick={nextSlide}>
                 »
             </button>
-
         </main>
     )
 }
