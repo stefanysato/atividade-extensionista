@@ -1,8 +1,8 @@
 import './Modal.css'
 
-import inst1 from '../assets/img/instr1.png'
-import inst2 from '../assets/img/instr2.png'
-import inst3 from '../assets/img/instr3.png'
+import inst1 from '../assets/img/inst1.png'
+import inst2 from '../assets/img/inst2.png'
+import inst3 from '../assets/img/inst3.png'
 
 export default function Modal({ isOpen, closeModal }) {
 
