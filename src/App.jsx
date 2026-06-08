@@ -5,7 +5,7 @@ import './index.css'
 
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Quiz from "./pages/quiz"
+import Quiz from "./pages/Quiz"
 import QuizResult from "./pages/QuizResult"
 import SpeciesList from "./pages/SpeciesList"
 import SpeciesDetail from "./pages/SpeciesDetail"
