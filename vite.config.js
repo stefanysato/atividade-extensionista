@@ -9,6 +9,13 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
 
+      workbox: {
+        navigateFallbackDenylist: [
+          /^\/pdfs\//,
+          /^\/.*\.(pdf|txt|png|jpg|jpeg|webp|svg)$/
+        ]
+      },
+
       manifest: {
         id: "/",
         name: "Passo Verde",
