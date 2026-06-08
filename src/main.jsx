@@ -3,11 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { FavoritesProvider } from './context/FavoritesContext.jsx'
-// import { registerSW } from 'virtual:pwa-register'
+import { registerSW } from 'virtual:pwa-register'
 
-// registerSW({
-//   immediate: true
-// })
+registerSW();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

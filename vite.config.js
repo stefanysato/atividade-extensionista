@@ -6,33 +6,33 @@ export default defineConfig({
   plugins: [
     react(),
 
-    // VitePWA({
-    //   registerType: 'autoUpdate',
+    VitePWA({
+      registerType: 'autoUpdate',
 
-    //   manifest: {
-    //     id: "/",
-    //     name: "Passo Verde",
-    //     short_name: "Passo Verde",
-    //     description: "Guia de arborização urbana",
-    //     start_url: "/",
-    //     display: "standalone",
-    //     background_color: "#f7f5ea",
-    //     theme_color: "#f7f5ea",
-    //     orientation: "portrait",
+      manifest: {
+        id: "/",
+        name: "Passo Verde",
+        short_name: "Passo Verde",
+        description: "Guia de arborização urbana",
+        start_url: "/",
+        display: "standalone",
+        background_color: "#f7f5ea",
+        theme_color: "#f7f5ea",
+        orientation: "portrait",
 
-    //     icons: [
-    //       {
-    //         src: "icons/icon-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png"
-    //       },
-    //       {
-    //         src: "icons/icon-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png"
-    //       }
-    //     ]
-    //   }
-    // })
+        icons: [
+          {
+            src: "icons/icon-192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "icons/icon-512.png",
+            sizes: "512x512",
+            type: "image/png"
+          }
+        ]
+      }
+    })
   ]
 })
