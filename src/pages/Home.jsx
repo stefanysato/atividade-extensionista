@@ -22,7 +22,7 @@ export default function Home() {
 
     return (
         <div className="page-content home">
-            <button className="install-btn" onClick={() => setOpenModal(true)}>
+            <button className="install-btn hide-on-install" onClick={() => setOpenModal(true)}>
                 <img src={install} />
                 <p>Instalar</p>
             </button>

@@ -73,3 +73,9 @@
         width: 300px;
     }
 }
+
+@media (display-mode: standalone) {
+    .hide-on-install {
+        display: none;
+    }
+}
