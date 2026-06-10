@@ -81,16 +81,14 @@
         max-width: 500px;
         margin: auto;
     }
+
 }
 
 @media (min-width: 1024px) {
     .species-detail {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        width: 90%;
-        margin: auto;
-        height: 90vh;
-        padding: 8rem;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 2rem;
     }
 
     .species-img {
