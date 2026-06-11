@@ -5,7 +5,7 @@ import home from '../assets/img/icons/home.png'
 import info from '../assets/img/icons/info.png'
 import search from '../assets/img/icons/search.png'
 import user from '../assets/img/icons/user.png'
-import mail from '../assets/img/icons/mail.png'
+import rate from '../assets/img/icons/rate.png'
 
 export default function NavBar() {
     return (
@@ -26,9 +26,9 @@ export default function NavBar() {
                 <img src={user} className='icon' />
                 <p>Perfil</p>
             </NavLink>
-            <NavLink to="/contato" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
-                <img src={mail} className='icon' />
-                <p>Contato</p>
+            <NavLink to="/avalie" className={({ isActive }) => isActive ? "navlink active" : "navlink"}>
+                <img src={rate} className='icon' />
+                <p>Pesquisa</p>
             </NavLink>
         </nav>
     )
